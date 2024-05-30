@@ -1,0 +1,174 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;600;800&family=Oswald:wght@500&family=Raleway:wght@500&family=Roboto:wght@100;400&display=swap');
+/* 
+-------------
+Custom Variables
+--------------
+*/
+
+:root{
+    --clr-primary: hsl(47, 88%, 63%);
+    --clr-secondary:hsl(0, 0%, 100%);
+    --clr-text-paragraph:hsl(0, 0%, 50%);
+    --clr-text: hsl(0, 0%, 7%);
+
+    --font-family-primary: "Figtree", sans-serif;
+    
+    --font-size-lg:30px;
+    --font-size-md:16px;
+    --font-size-sm:8px;
+
+    --font-weight-lg:800;
+    --font-weight-md:600;
+    --font-weight-sm:300;
+}
+
+/* 
+-------------
+Resets
+--------------
+ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* 
+Mobile: 375px
+- Desktop: 1440px */
+
+*{
+    background-color: var(--clr-secondary); 
+ }
+
+body{
+    background-color:var(--clr-primary);
+    font-family: var(--font-family-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:50rem;
+}
+/* card container */
+#cardContainer{
+    border:1px solid var(--clr-text);
+    border-radius: 5%;
+    box-shadow: 5px 5px 0;
+    max-width: 15rem;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: var(--clr-secondary);    
+}
+ #card{
+    margin-top:10px; 
+ }
+ /* top image */
+.header img{
+    border-radius: 18px;
+ }
+ /* Tag */
+ .cardTag{
+    background-color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+    border-radius: 3px;
+    width: 3rem;
+    height: 20px;
+    margin-top: 20px;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ /* Date */
+ .cardPublishedDate{
+      font-size: 12px;
+      font-weight: var(--font-weight-md);
+      margin-top: 10px;
+ }
+/* Heading / Anchor */
+ a{
+    text-decoration: none;
+    color: var(--clr-text);
+ }
+ a:hover{
+    color:var(--clr-primary);
+ }
+ /* paragragh styles */
+ p{
+    color: var(--clr-text-paragraph);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-md);
+}
+/* author image and author name */
+#foot{
+   font-size: var(--font-size-lg);
+   font-weight: var(--font-weight-md);
+   width: 5.5rem;
+   display: flex;
+   justify-content: space-between;
+   margin: 15px 0;
+}
+#imageAvatarName{
+    color: var(--clr-text);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-lg);
+}
+/* attribution */
+.attribution { 
+    font-size: 8px; 
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--clr-primary);
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    background-color: var(--clr-primary);
+}
+
+ /* @media only screen and (min-width:1440px){
+    *{
+       background-color: var(--clr-secondary); 
+    }
+    body{
+         background-color: var(--clr-secondary); 
+    }
+    #cardContainer{
+        width: 100%; no
+        height: 20%; no
+        width: 80%;
+    min-height:70vh;
+    width: 30%;
+    max-width: 50%;
+        
+    }
+    p{
+        font-size: var(--font-size-md);
+        display: flex;
+        flex-wrap: wrap;
+     }
+     
+ }
+*/
+
+
+
+
